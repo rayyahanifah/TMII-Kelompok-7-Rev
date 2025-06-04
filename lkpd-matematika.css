@@ -119,3 +119,9 @@ body {
   border-left: 6px solid #81c784;
   padding-left: 15px;
 }
+.persegi-panjang {
+      width: 300px;      /* Lebar persegi panjang */
+      height: 150px;     /* Tinggi persegi panjang */
+      background-color: skyblue; /* Warna persegi panjang */
+      border: 2px solid black;   /* Garis tepi */
+}

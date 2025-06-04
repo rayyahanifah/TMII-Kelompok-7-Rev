@@ -1,3 +1,15 @@
-document.getElementById("nextPage").addEventListener("click", function () {
-  window.location.href = "https://tamanmini.com/taman_jelajah_indonesia/";
+document.getElementById("nextPage").addEventListener("click", function() {
+  window.location.href = "https://www.tamanmini.com";
 });
+
+// Fungsi tombol pada card
+function goToPage(page) {
+  window.location.href = page;
+}
+
+function scrollToNextSection() {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+}

@@ -82,7 +82,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0d2f1c;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Hero Section */
@@ -137,16 +137,47 @@ body {
   box-shadow: 0 0 25px rgba(0, 255, 150, 0.6);
 }
 
-/* Animasi Daun */
-.leaf, .leaf2 {
-  position: absolute;
-  top: -50px;
-  width: 40px;
-  height: 40px;
-  background: url('https://cdn-icons-png.flaticon.com/512/4273/4273865.png') no-repeat center/contain;
-  animation: fall 10s linear infinite;
-  opacity: 0.8;
+/* Tambahkan ini ke file CSS kamu */
+#tempat {
+  background-image: url('https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2025/02/07/b5aae989-6685-47a2-bc9f-dcac85da574e-1738926996226-781a7f55e79a5525f954d708547ddd34.jpg'); /* Ganti dengan nama file sebenarnya */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 20px;
+  color: white;
+  z-index: 0;
 }
+
+/* Tambahkan efek overlay gelap supaya teks lebih jelas */
+#tempat::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.5); /* transparan hitam */
+  z-index: 1;
+}
+
+#tempat > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sesuaikan warna tombol jika perlu */
+#tempat button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#tempat button:hover {
+  background-color: #0077aa;
+}
+
 .leaf2 {
   left: 80%;
   animation-delay: 3s;
@@ -174,4 +205,129 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.judul {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 20px 0 10px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.card button {
+  background-color: #1f3cff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #1024b8;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card button:hover {
+  background-color: #0d1ea6;
+  transform: scale(1.05);
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #45a049;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #333;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+
+.spacer {
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(199, 199, 199, 0.5), rgb(182, 251, 178));
 }

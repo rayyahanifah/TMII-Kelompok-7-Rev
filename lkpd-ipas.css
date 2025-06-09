@@ -163,3 +163,11 @@ body {
   }
 }
 
+footer {
+  background: linear-gradient(to right, #66bb6a, #388e3c);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}

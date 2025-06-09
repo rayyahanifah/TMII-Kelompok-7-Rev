@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TMII - Kelompok 7</title>
+  <title>Beranda | BenuAntara</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- Navbar -->
 <header class="navbar">
-  <div class="logo">Kelompok 7 - TMII</div>
+  <div class="logo">BenuAntara</div>
   <nav>
     <ul class="nav-links">
       <li><a href="index.html">Beranda</a></li>
+      <li><a href="/anjungan bengkulu.html">Bengkulu</a></li>
+      <li><a href="/anjungan jambi.html">Jambi</a></li>
+      <li><a href="/anjungan asmat.html">Suku Asmat</a></li>
       <li class="dropdown">
-        <a href="#">LKPD ▾</a>
+        <a href="#">Projekku ▾</a>
         <ul class="dropdown-menu">
           <li><a href="/lkpd-sejarah.html">SEJARAH</a></li>
           <li><a href="/lkpd-pai.html">PAI</a></li>
@@ -28,7 +31,7 @@
           <li><a href="/lkpd-poster.html">POSTER</a></li>
         </ul>
       </li>
-      <li><a href="/our-team.html">Our Team</a></li>
+      <li><a href="/our-team.html">Tentang Kami</a></li>
     </ul>
   </nav>
 </header>
@@ -41,33 +44,26 @@
   <div class="overlay"></div>
   <div class="hero-content">
     <h1>Taman Mini Indonesia Indah</h1>
-    <h1>Kelompok 7 - X RPL</h1>
-    <p>Selamat datang di Taman Mini Indonesia Indah — tempat di mana budaya, sejarah, dan kebanggaan bangsa bertemu dalam satu taman yang menakjubkan, Jelajahi beragam anjungan daerah, dari rumah adat hingga kekayaan budaya lokal, semuanya hadir di satu taman: TMII.</p>
+    </p>Jelajahi lebih jauh mengenai Bengkulu, Jambi, dan Suku Asmat</p>        
     <button id="nextPage">Mulai Menjelajah</button>
   </div>
-
- <!-- Tombol Panah Bawah -->
-<div class="scroll-down" onclick="scrollToNextSection()">
-  <div class="arrow-down"></div>
-</div>
-
-
-
 </section>
 
-<!-- Section 1 -->
-<section id="section1">
-  <!-- konten di sini -->
+<section id="tentang" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>Taman Mini Indonesia Indah</h2>
+      <p>
+        Selamat datang di Taman Mini Indonesia Indah — tempat di mana budaya, sejarah, dan kebanggaan bangsa bertemu dalam satu taman yang menakjubkan, Jelajahi beragam anjungan daerah, dari rumah adat hingga kekayaan budaya lokal, semuanya hadir di satu taman: TMII.
+      </p>
+    </div>
+    <div class="about-image">
+      <div class="about-image">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuGKKVEQMc-GrpetQH7QiHP0OYW59R1kVh7_wefSxXQeGirVmkM0TsxSJftFpt58Ao0bB5V6SgITNDjEFfrZY2CUvo7rb1WTlvON9dz_8HeKl_V0ac3UF0ePyPCQ8P1oFq3gSkJEtZwhf0bYvqE1EfH6TgtJV2vPBGtvLqwG5gKFNOP5DBVDNL9WYi/w0/tm%20(1)" alt="TMII">
+      </div>
+    </div>
+  </div>
 </section>
-
-<!-- Pembatas -->
-<div class="spacer"></div>
-
-<!-- Section 2 -->
-<section id="section2">
-  <!-- konten di sini -->
-</section>
-
 
 <!-- TEMPAT YANG KAMI KUNJUNGI -->
 <section class="section" id="tempat">
@@ -76,19 +72,18 @@
     <div class="card">
       <img src="https://museum.co.id/wp-content/uploads/2020/09/download-91.jpeg" alt="Sumatera Selatan">
       <h2>Museum Suku Asmat</h2>
-     <button onclick="goToPage('asmat.html')">Baca Selengkapnya</button>
-
+     <button onclick="goToPage('anjungan asmat.html')">Baca Selengkapnya</button>
 
     </div>
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Bengkulu_Pavilion_TMII_%282025%29_-_img_02.jpg/1200px-Bengkulu_Pavilion_TMII_%282025%29_-_img_02.jpg" alt="Museum Indonesia">
       <h2>Anjungan Bengkulu</h2>
-      <button onclick="goToPage('bengkulu.html')">Baca Selengkapnya</button>
+      <button onclick="goToPage('anjungan bengkulu.html')">Baca Selengkapnya</button>
     </div>
     <div class="card">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_7cr5ha3U0YGwTdjVugSaMUKvii0zXeyCdw&sv" alt="Anjungan Riau">
       <h2>Anjungan Jambi</h2>
-      <button onclick="goToPage('jambi.html')">Baca Selengkapnya</button>
+      <button onclick="goToPage('anjungan jambi.html')">Baca Selengkapnya</button>
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 document.getElementById("nextPage").addEventListener("click", function() {
-  window.location.href = "https://www.tamanmini.com";
+  window.location.href = "#tempat";
 });
 
 // Fungsi tombol pada card
